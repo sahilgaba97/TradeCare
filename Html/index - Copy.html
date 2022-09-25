@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trade Care</title>
+
+	<style type="text/css">
+		body{
+			background-image:url("back.jpg");
+		}
+		#logo{
+			width: 5%;
+			height: 5%;
+			margin-left: 10%;
+			margin-top: 2%;
+		}
+		#home{
+			margin-top: 2%;
+			margin-left: 50%;
+		}
+		#side{
+			margin-top: 2%;
+			margin-left: 1%;
+		}
+
+		.contain1{
+  			display: flex;
+  			flex: 1;
+  			min-height: 100vh;
+  			align-items: center;
+  			justify-content: center;
+			}
+		.contain{
+			margin-left: 3%;
+			margin-right: 3%; 
+			margin-top: 5%;
+			width:25%;
+			height: 500px;
+			background-color: white;
+		}	
+		#flip{
+			margin-left: 5px;
+			}
+		#amaz{
+			margin-left: 10px;
+			}
+		ul {
+		    list-style-type: none; 
+		}	
+		li{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		#h1{
+			margin-top: 30px;
+		}
+		.box{
+			background-color: blue;
+			text-align: center;
+			color:white;
+			padding: 10px 10px 10px 10px;
+			margin: 1% 10% 0% 10%;
+		}
+		#read{
+			display: flex;
+			flex: 1;
+			align-items: center;
+			justify-content: center;
+		}
+		#s2{
+			margin-left: 150px
+		}
+	</style>
+
+		<script>
+		var x = document.getElementById("i0").textContent;
+		//alert(x);
+		document.getElementById("i0").innerHTML="as";
+		function ru(){
+			let r=document.getElementById("sea").value;
+			let ar="python C:\\Project\\c.py \""+r+"\"";
+			var nur=new ActiveXObject('WSCRIPT.Shell').Run(ar);
+			alert(nur);
+			}
+	</script>
+
+</head>
+<body>
+	<img src="icon.png" id="logo" align="left"><h1 id="side">TRADE CARE</h1>
+	<span id="home">HOME</span>
+	<br>
+	<form>
+		<input type="text" id="sea" name="search">
+		<input type="button" value=" GO " name="submit" onclick="ru()">
+
+	</form>
+	<div class="contain1">
+	<div class="contain" id="flip">
+		<img id="flip" src="flip.jpg" width="95%">
+		<hr id="h1">
+		<ul>
+			<li id="i0">SOME TEXT</li>
+			<li id="i1">SOME TEXT</li>
+			<li id="i2">SOME TEXT</li>
+			<li id="i3">SOME TEXT</li>
+			<li id="i4">SOME TEXT</li>
+			<li id="i5">SOME TEXT</li>
+			<li id="i6">SOME TEXT</li>
+			<li id="i7">SOME TEXT</li>
+			<li id="i8">SOME TEXT</li>
+			<li id="i9">SOME TEXT</li>
+		</ul>
+	</div>
+	<div id="amaz" class="contain" >
+		<img id="amaz" src="amaz.jpg"width="95%">
+		<hr>
+		<ul>
+			<li id="a0">SOME TEXT</li>
+			<li id="a1">SOME TEXT</li>
+			<li id="a2">SOME TEXT</li>
+			<li id="a3">SOME TEXT</li>
+			<li id="a4">SOME TEXT</li>
+			<li id="a5">SOME TEXT</li>
+			<li id="a6">SOME TEXT</li>
+			<li id="a7">SOME TEXT</li>
+			<li id="a8">SOME TEXT</li>
+			<li id="a9">SOME TEXT</li>
+		</ul>
+	</div>
+	<div id="wip" class="contain">
+		<img src="wip.jpg">
+	</div>
+	</div>
+	<div id="read">
+		<span id="s1" onclick="s1()" class="box" onmouseover="document.getElementById('s1').style.color='black'" onmouseout="document.getElementById('s1').style.color='white'">Read more</span>
+		<span id="s2" onclick="s2()" class="box" onmouseover="document.getElementById('s2').style.color='black'" onmouseout="document.getElementById('s2').style.color='white'">Read more</span>
+		<span id="s3" class="box" onmouseover="document.getElementById('s3').style.color='black'" onmouseout="document.getElementById('s3').style.color='white'">Read more</span>	
+	</div>
+	
+</body>
+</html>
